@@ -1,0 +1,8 @@
+PrintAccess1/target/
+PrintAccess2/target/
+PrintAccess1/.idea/
+PrintAccess2/.idea/
+PrintAccess1/PrintAccess1.iml
+PrintAccess2/PrintAccess2.iml
+PrintAccess1/print-server-log.log
+PrintAccess2/print-server-log.log
