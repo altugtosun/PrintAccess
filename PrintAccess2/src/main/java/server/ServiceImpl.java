@@ -37,7 +37,7 @@ public class ServiceImpl extends UnicastRemoteObject implements Service {
         this.jobId = 0;
 
         //Loggers
-        this.fh = new FileHandler("/Users/Onat1/Desktop/E18/02239/Exercises/PrintAccess/PrintAccess1/print-server-log.log");
+        this.fh = new FileHandler("/Users/Onat1/Desktop/E18/02239/Exercises/PrintAccess/PrintAccess2/print-server-log.log");
         this.logger.addHandler(fh);
         SimpleFormatter formatter = new SimpleFormatter();
         this.fh.setFormatter(formatter);
@@ -196,9 +196,9 @@ public class ServiceImpl extends UnicastRemoteObject implements Service {
     }
 
     //Assumed that users are in the database. So this function is just for test purposes.
-    public void addUser(User user) throws NoSuchAlgorithmException, UnsupportedEncodingException, RemoteException {
+    public void addUser(User user, int role) throws NoSuchAlgorithmException, UnsupportedEncodingException, RemoteException {
         Pair<String, String> hashed = Authentication.getInstance().hashWithRandomSalt(user.getPassword());
-        SQLiteJDBC.addUser(user.getUsername(), hashed.getKey(), hashed.getValue());
+        SQLiteJDBC.addUser(user.getUsername(), hashed.getKey(), hashed.getValue(), role);
     }
 
     public Boolean login(User user) throws IOException, NoSuchAlgorithmException {

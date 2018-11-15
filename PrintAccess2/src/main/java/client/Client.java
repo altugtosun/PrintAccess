@@ -28,12 +28,13 @@ public class Client implements RMIClientSocketFactory, Serializable {
         //User intruder = new User("Alice", "password");
 
         //Assumed that users are in the database. So this call is just for test purposes.
-        //printService.addUser(alice);
-        //printService.addUser(bob);
-        //printService.addUser(cecilia);printService.addUser(george);
-        //printService.addUser(david);
-        //printService.addUser(fred);
-        //printService.addUser(erica);
+        /*printService.addUser(alice, 1);
+        printService.addUser(bob, 2);
+        printService.addUser(cecilia, 3);
+        printService.addUser(george, 4);
+        printService.addUser(david, 4);
+        printService.addUser(fred, 4);
+        printService.addUser(erica, 4);*/
 
 
         //Assumed that printers are already added in the server. So this is just for test purposes. No authentication needed.
