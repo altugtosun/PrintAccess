@@ -44,8 +44,8 @@ public class Client implements RMIClientSocketFactory, Serializable {
         System.out.println("---" + printService.addPrinter("printer4"));
         System.out.println("---" + printService.addPrinter("printer5"));
 
-        System.out.println("---" + printService.start(alice));
         System.out.println("---" + printService.start(erica));
+        System.out.println("---" + printService.start(alice));
 
         System.out.println("---" + printService.print("file1", "printer1", fred));
         System.out.println("---" + printService.print("file2", "printer2", bob));
